@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Formula 1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 style=" text-align: center;">Welcome to Formula 1</h1>
+    <nav>
+        <ul>
+        <li><a href="#drivers">Drivers</a></li>
+        <li><a href="#teams">Teams</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#news">News</a></li>
+    </ul>
+    </nav>
+    <br>
+    <section id="drivers"> 
+        <ul>
+            <h3>Top Drivers</h3>
+            <li>Lewis Hamilton</li>
+            <li>Max Verstappen</li>
+            <li>Charles Leclerc</li>
+            <br>
+            <button id="driver_popup">Click if you agree!</button>
+        </ul>
+    </section>
+
+    <section id="teams">
+        <ul>
+            <h3>Top Teams</h3>
+            <li>Mercedes</li>
+            <li>Red Bull</li>
+            <li>Ferrari</li>
+            <br>
+            <button id="team_popup">Click if you agree!</button>
+        </ul>
+    </section>
+    <section id="schedule">
+        <h2>Race Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Race</th>
+                    <th>Date</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monaco Grand Prix</td>
+                    <td>May 29</td>
+                    <td>Monte Carlo</td>
+                </tr>
+                <tr>
+                    <td>British Grand Prix</td>
+                    <td>July 10</td>
+                    <td>Silverstone</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <section id="news">
+        <h2>Latest News</h2>
+        <article>
+            <h3>Hamilton Wins Again</h3>
+            <p>In an exciting race, Lewis Hamilton has claimed another victory, solidifying his lead in the championship.</p>
+        </article>
+    </section>
+    <br>
+    <br>
+    <footer>
+        <p>&copy; 2024 Formula 1. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#driver_popup').click(function(){
+                alert('You agree as well, nice!');
+            });
+
+            $('#team_popup').click(function(){
+                alert('You agree as well, nice!');
+            });
+
+            /* Remove drivers and teams when clicked
+            $('li').click(function(){
+                $(this).toggle();
+            }); 
+            */
+        });
+    </script>
+
+</body>
+</html>
